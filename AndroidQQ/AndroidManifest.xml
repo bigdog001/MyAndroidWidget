@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myqq"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:name="com.example.myqq.MyApplicaton"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="clive#textqq" />
+
+        <activity android:name="com.example.myqq.MyTabActivity" />
+        <activity android:name="com.example.myqq.MyQQContact" />
+        <activity android:name="com.example.myqq.MyQQNews" />
+        <activity android:name="com.example.myqq.MyQQDynamic" />
+        <activity android:name="com.example.start.PagerActivity" />
+        <activity android:name="com.example.start.WhatsnewDoor" />
+        <activity android:name="com.example.myqq.MyQQNewsMessge" />
+        <activity android:name="com.example.start.MyqqStartActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.easemob.chat.EMChatService" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
