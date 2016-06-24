@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/animation_layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <!--
+         <include android:id="@+id/topLayout"
+        layout="@layout/top1" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="任务系统"
+                android:textColor="@color/lightgray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/actionbar_search_icon"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/actionbar_add_icon" />
+
+            <Button
+                android:id="@+id/btnSet"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/actionbar_more_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
